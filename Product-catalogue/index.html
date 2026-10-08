@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produktkatalog</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Produktkatalog</h1>
+    <p>Entdecke unser Computerzubehör.</p>
+
+    <div class="controls">
+      <div>
+        <label for="search">Produkt suchen</label>
+        <input id="search" type="search"
+               placeholder="Zum Beispiel Tastatur">
+      </div>
+
+      <div>
+        <label for="category">Kategorie</label>
+        <select id="category">
+          <option value="all">Alle Kategorien</option>
+          <option value="Kopfhörer">Kopfhörer</option>
+          <option value="Tastaturen">Tastaturen</option>
+          <option value="Mäuse">Mäuse</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="sort">Sortierung</label>
+        <select id="sort">
+          <option value="default">Standard</option>
+          <option value="price-asc">Preis aufsteigend</option>
+          <option value="price-desc">Preis absteigend</option>
+        </select>
+      </div>
+    </div>
+
+        <p id="result-count" role="status"></p>
+    <div id="products" class="product-grid"></div>
+  </main>
+</body>
+</html>
